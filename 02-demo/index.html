@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面向对象的tab栏</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h3>JS面向对象 动态添加标签页</h3>
+        <!-- tab标签 -->
+        <div class="tabs-box" id="tab">
+            <nav class="first-nav">
+                <ul>
+                    <li class="active"><span>测试1</span><span class="close">X</span></li>
+                    <li><span>测试2</span><span class="close">X</span></li>
+                    <li><span>测试3</span><span class="close">X</span></li>
+                </ul>
+                <div class="nav-add">
+                    <span>+</span>
+                </div>
+            </nav>
+            <!-- tab内容 -->
+            <div class="tab-pane">
+                <section class="active">测试1</section>
+                <section>测试2</section>
+                <section>测试3</section>
+            </div>
+        </div>
+    </main>
+    <script src="./js/tab.js"></script>
+</body>
+
+</html>
