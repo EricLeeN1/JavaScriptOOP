@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1、父类的声明
+        class Father {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+            sum() {
+                console.log(this.x + this.y);
+
+            }
+            money() {
+                console.log('100亿');
+            }
+        }
+        // 2、子类的继承
+        class Son extends Father {
+            constructor(x, y) {
+                super(x, y);// 调用了父类中的构造函数
+            }
+        }
+
+        let son = new Son(10, 100);
+        son.money();
+        son.sum();
+    </script>
+</body>
+
+</html>
